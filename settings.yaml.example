@@ -157,3 +157,5 @@ global_search:
   # map_max_tokens: 1000
   # reduce_max_tokens: 2000
   # concurrency: 32
+
+host: 0.0.0.0

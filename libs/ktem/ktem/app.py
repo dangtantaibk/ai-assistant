@@ -173,6 +173,10 @@ class BaseApp:
         """Called when the app is created"""
 
     def make(self):
+        # Lấy host từ settings
+        host = getattr(settings, "host", "0.0.0.0")
+        port = getattr(settings, "port", 5000)
+        
         markmap_js = """
         <script>
             window.markmap = {
@@ -322,3 +326,8 @@ class BasePage:
         for value in self.__dict__.values():
             if isinstance(value, BasePage):
                 value.on_app_created()
+
+
+if __name__ == '__main__':
+    app = BaseApp()
+    app.run(host='0.0.0.0', port=5000)

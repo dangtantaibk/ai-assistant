@@ -446,7 +446,7 @@ class ConversationControl(BasePage):
             session.add(result)
             session.commit()
 
-        gr.Info("Chat suggestions updated.")
+        gr.Info("Chat suggestions updated. For changes to take effect, please close and re-open your current shell.")
 
     def toggle_demo_login_visibility(self, user_api_key, request: gr.Request):
         try:
