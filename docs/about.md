@@ -1,6 +1,6 @@
-# About Kotaemon
+# About Kido Assistant
 
-An open-source tool for chatting with your documents. Built with both end users and
+<!-- An open-source tool for chatting with your documents. Built with both end users and
 developers in mind.
 
 [Source Code](https://github.com/Cinnamon/kotaemon) |
@@ -8,4 +8,4 @@ developers in mind.
 
 [Installation Guide](https://cinnamon.github.io/kotaemon/) |
 [Developer Guide](https://cinnamon.github.io/kotaemon/development/) |
-[Feedback](https://github.com/Cinnamon/kotaemon/issues)
+[Feedback](https://github.com/Cinnamon/kotaemon/issues) -->

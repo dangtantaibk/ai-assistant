@@ -2,6 +2,21 @@ import os
 
 from theflow.settings import settings as flowsettings
 
+from dotenv import load_dotenv
+import os
+
+# Load .env file
+load_dotenv()
+
+# Kiểm tra xem key có được load không
+api_key = os.getenv('GRAPHRAG_API_KEY')
+print(os.getcwd())  # Kiểm tra current working directory
+print(os.environ.get('GRAPHRAG_API_KEY'))
+print(api_key)
+if not api_key:
+    raise ValueError("GRAPHRAG_API_KEY not found in environment variables")
+
+
 KH_APP_DATA_DIR = getattr(flowsettings, "KH_APP_DATA_DIR", ".")
 KH_GRADIO_SHARE = getattr(flowsettings, "KH_GRADIO_SHARE", False)
 GRADIO_TEMP_DIR = os.getenv("GRADIO_TEMP_DIR", None)

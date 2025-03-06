@@ -22,8 +22,15 @@ class ChatPanel(BasePage):
     def __init__(self, app):
         self._app = app
         self.on_building_ui()
+        self.default_files = [
+            "docs/data/ChinhSach.md",
+            "docs/data/Dữ liệu AI - chính sách bán hàng Bánh.pdf",
+            "docs/data/Dữ liệu AI - chính sách bán hàng Dầu.pdf",
+            "docs/data/Dữ liệu AI - kiến thức bán hàng.pdf",
+            "docs/data/Dữ liệu AI - kiến thức nền tảng.pdf",
+            # Thêm các file mặc định khác
+        ]
 
-    def on_building_ui(self):
         self.chatbot = gr.Chatbot(
             label=self._app.app_name,
             placeholder=PLACEHOLDER_TEXT,
